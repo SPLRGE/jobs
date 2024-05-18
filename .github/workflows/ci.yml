@@ -1,5 +1,9 @@
 name: ci
 
+permissions:
+  contents: read
+  packages: write
+  
 on:
   release:
     types: [created]
