@@ -19,5 +19,6 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY --from=builder /app/package.json .
 COPY --from=builder /app/pnpm-lock.yaml .
 COPY --from=builder /app/bin/migrate.js ./bin/migrate.js
+COPY --from=builder /app/drizzle ./drizzle
 
 ENTRYPOINT ["sh", "-c", "node ./bin/migrate.js && node ./.output/server/index.mjs"]
