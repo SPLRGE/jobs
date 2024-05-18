@@ -12,6 +12,10 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
     steps:
+      - name: downcase image name
+        run: |
+          echo "IMAGE_NAME=${GITHUB_REPOSITORY@L}" >>${GITHUB_ENV}
+
       - name: Check out code
         uses: actions/checkout@v4
 
