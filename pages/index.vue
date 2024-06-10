@@ -75,7 +75,8 @@ useRouter().replace({ query: { loggedOut: undefined, accountDeleted: undefined }
     <p v-else-if="!data || !Array.isArray(data) || data?.length == 0" class="my-4 italic text-gray-500">
       No job available, come back later
     </p>
-    <PostsCategory v-for="category in data" v-else-if="data" :key="category.id" :name="category.name"
+    <PostsCategory
+v-for="category in data" v-else-if="data" :key="category.id" :name="category.name"
       :posts="category.posts" />
     <PrimaryError v-else>
       <p>Cannot load jobs</p>

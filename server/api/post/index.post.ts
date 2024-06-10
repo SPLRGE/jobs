@@ -44,7 +44,7 @@ export default defineRequestHandler(async event => {
       createdBy: event.context.user.id,
     })
     .catch(err => {
-      /* eslint-disable-next-line eqeqeq */
+       
       if (err.code == 23503) {
         // violates foreign key constraint
         throw createError({

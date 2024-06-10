@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { UnwrapRef } from 'vue'
-import { z } from 'zod'
+import type { z } from 'zod'
 import type { FormSubmitEvent } from '#ui/types'
 
 const props = defineProps<{

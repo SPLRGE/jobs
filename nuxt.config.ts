@@ -2,12 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/fontaine',
     '@pinia/nuxt',
     '@nuxtjs/robots',
     '@nuxt/ui',
-    "@nuxtjs/plausible"
+    "@nuxtjs/plausible",
+    "@nuxt/eslint",
+    "@nuxt/fonts"
   ],
 
   app: {
@@ -18,6 +18,29 @@ export default defineNuxtConfig({
     },
   },
 
+  nitro: {
+    experimental: {
+      openAPI: {
+        ui: {
+          scalar: {
+            theme: 'purple'
+          }
+        },
+        meta: {
+          title: "SPLRGE Jobs",
+          description: "Discover open positions @ SPLRGE",
+          version: "1.0"
+        }
+      }
+    }
+  },
+
+  fonts: {
+    families: [
+      { name: 'Lexend', provider: 'google' }
+    ]
+  },
+    
   plausible: {
     apiHost: 'https://analytics.splrge.dev'
   },

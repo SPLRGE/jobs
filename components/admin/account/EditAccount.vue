@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { z } from 'zod'
+import type { z } from 'zod'
 import type { FormSubmitEvent } from '#ui/types'
 import { insertUserSchema } from '~/db/schema'
 

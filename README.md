@@ -44,6 +44,9 @@ pnpm run migrate:deploy
 
 Don't forget these credentials!
 
+## Documentation
+The api documentation can be found at `/_nitro/scalar`
+
 ## Help
 
 Join our [Discord server](https://splrge.dev/discord) for help.

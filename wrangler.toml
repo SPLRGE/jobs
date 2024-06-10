@@ -1,4 +1,0 @@
-name = "vexa-jobs"
-main = "./.output/server/index.mjs"
-compatibility_date = "2022-09-10"
-node_compat = true
