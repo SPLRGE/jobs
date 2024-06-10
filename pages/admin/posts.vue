@@ -75,6 +75,8 @@ const transformedPosts = computed(() => {
       }
     })
     return returned
+  } else {
+    return []
   }
 })
 const filteredRows = computed(() => {

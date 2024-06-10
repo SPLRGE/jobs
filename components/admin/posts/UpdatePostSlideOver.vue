@@ -3,7 +3,6 @@ import { z } from 'zod'
 import { insertPostSchema, stringToNumber } from '~/db/schema'
 
 const post = useCurrentPost()
-// @ts-ignore
 const schema = insertPostSchema
   .omit({
     id: true,

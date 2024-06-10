@@ -47,7 +47,6 @@ export default defineRequestHandler(async event => {
 
     selectFields = {
       ...selectFields,
-      // @ts-ignore
       clicks: posts.clicks,
       createdAt: posts.createdAt,
       createdBy: {

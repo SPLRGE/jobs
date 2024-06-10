@@ -2,7 +2,7 @@
 import { insertPostSchema } from '~/db/schema'
 
 const post = useCurrentPost()
-// @ts-ignore
+
 const schema = insertPostSchema.pick({
   id: true,
 })
