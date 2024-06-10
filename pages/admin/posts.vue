@@ -124,7 +124,7 @@ const moreButtonItems = (row: any) => [
     <UTable :columns="columns" :loading="pending" :rows="filteredRows" :sort="{ column: 'id', direction: 'desc' }">
       <template #isActive-data="{ row }">
         <div class="flex items-center">
-          <span class="h-4 w-4 rounded-full" :class="row.isActive ? 'bg-green-500' : 'bg-red-500'"></span>
+          <span class="size-4 rounded-full" :class="row.isActive ? 'bg-green-500' : 'bg-red-500'"/>
         </div>
       </template>
       <template #actions-data="{ row }">

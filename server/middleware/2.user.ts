@@ -1,4 +1,4 @@
-/* eslint-disable import/no-named-as-default-member */
+ 
 import jwt from 'jsonwebtoken'
 import { z } from 'zod'
 import { eq } from 'drizzle-orm'

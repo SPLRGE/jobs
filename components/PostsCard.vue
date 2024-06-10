@@ -17,7 +17,7 @@ defineProps({
 
 <template>
   <div
-    class="mt-4 flex flex-row items-center justify-between rounded-md border-2 border-royal-purple-500 p-6 shadow-2xl">
+    class="mt-4 flex flex-row items-center  justify-between rounded-md border-2 border-royal-purple-500 p-6 shadow-2xl">
     <div class="flex flex-col">
       <span class="text-xl font-bold"> {{ title }}</span>
       <span class="text-sm">

@@ -9,7 +9,7 @@ if (useUserStore().user) {
 
 <template>
   <div class="my-6">
-    <hr />
+    <hr >
     <div class="flex flex-row items-center justify-between">
       <p class="my-4 text-center">
         Made by
