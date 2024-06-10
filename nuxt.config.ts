@@ -1,7 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/google-fonts', '@nuxtjs/fontaine', '@pinia/nuxt', '@nuxtjs/robots', '@nuxt/ui'],
+  modules: [
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/fontaine',
+    '@pinia/nuxt',
+    '@nuxtjs/robots',
+    '@nuxt/ui',
+    "@nuxtjs/plausible"
+  ],
 
   app: {
     head: {
@@ -9,6 +16,10 @@ export default defineNuxtConfig({
         lang: 'fr',
       },
     },
+  },
+
+  plausible: {
+    apiHost: 'https://analytics.splrge.dev'
   },
 
   ui: {
