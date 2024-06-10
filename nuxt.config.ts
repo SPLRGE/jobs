@@ -40,7 +40,7 @@ export default defineNuxtConfig({
       { name: 'Lexend', provider: 'google' }
     ]
   },
-
+    
   plausible: {
     apiHost: 'https://analytics.splrge.dev'
   },
